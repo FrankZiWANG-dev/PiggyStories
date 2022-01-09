@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyStories</title>
+</head>
+<body>
+    <nav>
+        <a href="/piggystories/login">Log in</a>
+    </nav>
+    <h1>Welcome to PiggyStories</h1>
+
+    {% for data in dataset %}
+ 
+    {{ data.title }}<br/>
+    {{ data.author }}<br/>
+    {{ data.date }}<br/>
+    {{ data.summary }}<br/>
+    {{ data.content }}<br/>
+
+    <hr/>
+ 
+    {% endfor %}
+</body>
+</html>
